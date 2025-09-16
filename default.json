@@ -30,12 +30,13 @@
   ],
   "packageRules": [
     {
+      "matchUpdateTypes": [
+        "major"
+      ],
       "enabled": false,
       "matchPackageNames": [
-        "boto3"
-      ],
-      "matchUpdateTypes": [
-        "patch"
+        "/^node$/",
+        "/@types/node/"
       ]
     },
     {
