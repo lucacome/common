@@ -111,7 +111,7 @@
         "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentValue>v\\d+(?:\\.\\d+(?:\\.\\d+)?)?)",
         "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentDigest>[a-z0-9]{40}|[a-z0-9]{64}) # (?<currentValue>v\\d+(?:\\.\\d+(?:\\.\\d+)?)?)"
       ],
-      "versioningTemplate": "semver"
+      "versioningTemplate": "loose"
     },
     {
       "description": "Update _VERSION variables in shell scripts and Makefiles",
