@@ -103,15 +103,27 @@
   "regexManagers": [
     {
       "datasourceTemplate": "github-tags",
-      "description": "Update Github Action references in the Markdown files",
+      "description": "Update Github Action major-only references in the Markdown files",
+      "extractVersion": "^(?<version>v\\d+)",
       "fileMatch": [
         "\\.md$"
       ],
       "matchStrings": [
-        "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentValue>v\\d+(?:\\.\\d+(?:\\.\\d+)?)?)",
-        "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentDigest>[a-z0-9]{40}|[a-z0-9]{64}) # (?<currentValue>v\\d+(?:\\.\\d+(?:\\.\\d+)?)?)"
+        "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentValue>v\\d+)(?!\\.)"
       ],
       "versioningTemplate": "loose"
+    },
+    {
+      "datasourceTemplate": "github-tags",
+      "description": "Update Github Action full semver references in the Markdown files",
+      "fileMatch": [
+        "\\.md$"
+      ],
+      "matchStrings": [
+        "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentValue>v\\d+\\.\\d+\\.\\d+)",
+        "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentDigest>[a-z0-9]{40}|[a-z0-9]{64}) # (?<currentValue>v\\d+\\.\\d+\\.\\d+)"
+      ],
+      "versioningTemplate": "semver"
     },
     {
       "description": "Update _VERSION variables in shell scripts and Makefiles",
