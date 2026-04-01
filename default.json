@@ -104,14 +104,13 @@
     {
       "datasourceTemplate": "github-tags",
       "description": "Update Github Action major-only references in the Markdown files",
-      "extractVersion": "^(?<version>v\\d+)",
       "fileMatch": [
         "\\.md$"
       ],
       "matchStrings": [
         "\\suses: (?<depName>[\\w-]+/[\\w-]+)(?<path>/.*)?@(?<currentValue>v\\d+)\\s"
       ],
-      "versioningTemplate": "loose"
+      "versioningTemplate": "semver-partial"
     },
     {
       "datasourceTemplate": "github-tags",
