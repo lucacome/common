@@ -41,7 +41,7 @@
     },
     {
       "matchPackageNames": [
-        "redhat/ubi9"
+        "redhat/ubi9*"
       ],
       "matchUpdateTypes": [
         "patch"
