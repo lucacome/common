@@ -95,7 +95,7 @@
     }
   ],
   "postUpdateOptions": [
-    "gomodTidy",
+    "gomodTidyAll",
     "gomodUpdateImportPaths",
     "yarnDedupeHighest",
     "npmDedupe"
