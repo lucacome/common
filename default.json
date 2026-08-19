@@ -17,7 +17,11 @@
     ":gitSignOff",
     ":maintainLockFilesMonthly",
     ":disableRateLimiting",
-    ":semanticCommitsDisabled"
+    ":semanticCommitsDisabled",
+    "abandonments:recommended", 
+    "security:minimumReleaseAgeNpm",
+    "security:openssf-scorecard",
+    "security:gomodIndirectSecurityUpdates"
   ],
   "ignorePaths": [
     "**/node_modules/**"
