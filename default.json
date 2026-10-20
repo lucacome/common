@@ -67,7 +67,7 @@
       "matchDatasources": [
         "npm"
       ],
-      "rangeStrategy": "bump"
+      "rangeStrategy": "pin"
     },
     {
       "addLabels": [
