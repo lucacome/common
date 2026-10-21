@@ -89,7 +89,7 @@
       "addLabels": [
         "github_actions"
       ],
-      "matchManagers": [
+      "matchDatasources": [
         "action"
       ]
     }
