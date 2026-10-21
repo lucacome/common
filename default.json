@@ -92,6 +92,14 @@
       "matchManagers": [
         "github-actions"
       ]
+    },
+    {
+      "addLabels": [
+        "mise"
+      ],
+      "matchManagers": [
+        "mise"
+      ]
     }
   ],
   "postUpdateOptions": [
